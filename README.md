@@ -43,6 +43,7 @@ This project uses **OpenCV** and **MediaPipe** for real-time hand tracking and s
 
 - **You are then all set! Run the program and you will have control of the volume with right hand and control of the effect plugin with left hand**
 
+-**NOTE: use testfunctions.py to test if OSC messages are going through to Ableton Live.**
 
 
 
