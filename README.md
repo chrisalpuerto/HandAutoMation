@@ -28,16 +28,16 @@ This project uses **OpenCV** and **MediaPipe** for real-time hand tracking and s
 - **Python with dependencies (install requirements.txt)**
 
 ## How-To:
-- **Install LiveGrabber Plugins into Ableton Live: https://www.showsync.com/tools#livegrabber**
-- **Place GrabberReceiver plugin on main channel, set receive port to 12345**
-- **For volume automation with right hand, place TrackerGrabber plugin on main channel, volume as parameter and send/receive address as '/live/track/volume'. Doing so will look like this:**
+- Install LiveGrabber Plugins into Ableton Live: **https://www.showsync.com/tools#livegrabber**
+- Place GrabberReceiver plugin on main channel, set receive port to **12345**
+- For volume automation with right hand, place TrackerGrabber plugin on main channel, volume as parameter and send/receive address as **'/live/track/volume'**. Doing so will look like this:
 
 ![Example](public/mainchannelrackHandAutoMation.png)
 
 - **You can now control the volume with your right hand, using thumb and index fingers**
 
-- **For effect automation (you can use any effect automation), place your effect plugin and ParamGrabber plugin on any track rack that you want to control.**
-- **You can set parameter to anything that you want in plugin, in this case it is set to frequency. Set send/receive address to '/live/track/reverb'. Doing so will look like:**
+- For effect automation (you can use any effect automation), place your effect plugin and ParamGrabber plugin on any track rack that you want to control.
+- You can set parameter to anything that you want in plugin, in this case it is set to frequency. Set send/receive address to **'/live/track/reverb'**. Doing so will look like:
 
 ![Example 2](public/track1rackHandAutoMation.png)
 
