@@ -54,9 +54,8 @@ while cap.isOpened():
             thumb_x, thumb_y = int(thumb_tip.x * w), int(thumb_tip.y * h)
             index_x, index_y = int(index_tip.x * w), int(index_tip.y * h)
 
+            # distance between thumb and index finger (pixel vals)
             distance = np.linalg.norm(np.array([thumb_x, thumb_y]) - np.array([index_x, index_y]))
-            normalized_distance = (distance - min_distance) / (max_distance - min_distance)
-            normalized_distance = max(0, min(1, normalized_distance))
             
             if label == "Left":
                 left_distance = int(distance)
@@ -88,7 +87,7 @@ while cap.isOpened():
 
     cv2.imshow("HandAutoMation", frame)
 
-    print(f"normalized: {normalized_distance} left: {right_distance}, right: {right_distance}")
+    print(f"normalized left : {normalized_distance_left}, normalized right: {normalized_distance_right}")
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
