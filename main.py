@@ -1,4 +1,8 @@
-#chris alpuerto
+'''
+CREATED BY CHRIS ALPUERTO
+Read README.md for instructions on how to use
+'''
+
 from pythonosc import udp_client
 import cv2
 import mediapipe as mp
@@ -82,12 +86,15 @@ while cap.isOpened():
             
             # distance text
             cv2.putText(frame, f"{int(distance)} px", text_position, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
+
+            # sends finger data to ableton. I have this routed to main channel rack and first channel rack in Ableton
             client.send_message("/live/track/volume", normalized_distance_left)
             client.send_message("/live/track/reverb", normalized_distance_right)
             
 
     cv2.imshow("HandAutoMation", frame)
 
+    # print out finger data in terminal to see data in live time
     print(f"normalized left : {normalized_distance_left}, normalized right: {normalized_distance_right}")
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
