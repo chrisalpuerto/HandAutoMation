@@ -22,8 +22,9 @@ max_distance = 370
 left_distance = 0
 right_distance = 0
 normalized_distance = 0
-normailzed_distance_left = 0
+normalized_distance_left = 0
 normalized_distance_right = 0
+
 
 cap = cv2.VideoCapture(1)
 cap.set(3, frameWidth)
