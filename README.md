@@ -3,6 +3,7 @@
 This project uses **OpenCV** and **MediaPipe** for real-time hand tracking and sends control data to **Ableton Live** using **OSC (Open Sound Control)**. The distance between your **thumb and index finger** is measured and mapped to parameters inside Ableton, enabling **gesture-based music control**.
 
 ---
+**LIVE DEMO**: https://drive.google.com/file/d/1SOpbyPH2KmkuV2kpRt7YPfQSAo2Uxdye/view?usp=sharing
 
 ## Features
 ✅ **Real-time hand tracking** using OpenCV & MediaPipe  
