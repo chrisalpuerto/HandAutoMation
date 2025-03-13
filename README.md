@@ -4,6 +4,7 @@ This project uses **OpenCV** and **MediaPipe** for real-time hand tracking and s
 
 ---
 **LIVE DEMO**: https://drive.google.com/file/d/1SOpbyPH2KmkuV2kpRt7YPfQSAo2Uxdye/view?usp=sharing
+---
 
 ## Features
 ✅ **Real-time hand tracking** using OpenCV & MediaPipe  
